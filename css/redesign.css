@@ -53,7 +53,7 @@ h1, h2, .footer-logo { font-family: 'Fraunces', Georgia, serif; letter-spacing: 
 .hero::before { content: ''; position: absolute; width: min(40vw, 560px); aspect-ratio: 1; border-radius: 50%; background: #e7d9b9; opacity: .45; top: -65%; right: -8%; pointer-events: none; }
 .hero-grid { grid-template-columns: minmax(0, .96fr) minmax(0, 1.04fr); gap: clamp(36px, 6vw, 88px); position: relative; }
 .hero-content { padding-block: 22px; }
-.hero .eyebrow { color: var(--secondary) !important; background: #fff5e8; padding: 9px 15px; border-radius: 999px; margin-bottom: 26px; }
+.hero .eyebrow { color: #a63b22 !important ; background: #fff5e8; padding: 9px 15px; border-radius: 999px; margin-bottom: 26px; }
 .hero-content h1 { font-size: clamp(3.1rem, 5.2vw, 5.7rem); line-height: 1.05; letter-spacing: -.06em; max-width: 700px; margin-bottom: 25px; }
 .hero-content p { opacity: 1; color: #506165; font-size: 1.08rem; line-height: 1.75; max-width: 540px; }
 .hero-actions { margin-top: 32px; }
