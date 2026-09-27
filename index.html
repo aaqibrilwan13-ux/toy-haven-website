@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toy Haven | Figurines, Toys, Board Games &amp; Diecast Cars</title>
+  <meta name="description" content="Toy Haven is a modern online store for collectible figurines, toys, board games and diecast model cars. Shop new arrivals, browse by category and build your collection.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#174d51">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/redesign.css">
+  <link rel="stylesheet" href="css/layout.css">
+</head>
+<body class="home-page">
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ================= HEADER ================= -->
+  <aside class="announcement-bar" aria-label="Store notice">
+    <section class="container announcement-inner">
+      <span>THE LITTLE THINGS MAKE PLAY BIG.</span>
+      <a href="products.html">Explore the collection <span aria-hidden="true">↗</span></a>
+    </section>
+  </aside>
+
+  <header class="site-header">
+    <section class="container nav-wrapper">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Toy Haven logo" onerror="this.onerror=null;this.src='https://placehold.co/40x40/174d51/FFFFFF?text=TH';">
+        Toy Haven
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="cart.html">Cart</a>
+        <a href="feedback.html">Support</a>
+      </nav>
+
+      <section class="nav-icons">
+        <a href="wishlist.html" class="nav-icon-link" aria-label="View wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
+          <span class="badge wishlist-count">0</span>
+        </a>
+        <a href="cart.html" class="nav-icon-link" aria-label="View shopping cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          <span class="badge cart-count">0</span>
+        </a>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </section>
+    </section>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <section class="container hero-grid">
+        <section class="hero-content">
+          <span class="eyebrow" style="color:var(--accent)">THE COLLECTOR’S CORNER</span>
+          <h1>Good things come in little boxes.</h1>
+          <p>Curious minds, happy shelves, unforgettable game nights. Find something you’ll love to give, keep or play.</p>
+          <section class="hero-actions">
+            <a href="products.html" class="btn btn-primary">Shop the collection <span aria-hidden="true">↗</span></a>
+            <a href="#categories" class="btn btn-outline">Browse categories</a>
+          </section>
+          <p class="hero-footnote">FIGURINES · TOYS · GAMES · DIECAST</p>
+        </section>
+
+        <section class="hero-showcase">
+          <section class="slider" aria-roledescription="carousel" aria-label="Featured categories">
+            <section class="slide active">
+              <img src="images/banner1.jpg" alt="Collectible figurines on display" onerror="this.onerror=null;this.src='https://placehold.co/500x400/174d51/FFFFFF?text=Figurines';">
+              <h2>Collectible Figurines</h2>
+            </section>
+            <section class="slide">
+              <img src="images/banner2.jpg" alt="Assorted toys for all ages" onerror="this.onerror=null;this.src='https://placehold.co/500x400/d75d3d/FFFFFF?text=Toys';">
+              <h3>Toys for Every Age</h3>
+            </section>
+            <section class="slide">
+              <img src="images/banner3.jpg" alt="Board games ready to play" onerror="this.onerror=null;this.src='https://placehold.co/500x400/f3c762/22223B?text=Board+Games';">
+              <h3>Board Game Nights</h3>
+            </section>
+            <section class="slide">
+              <img src="images/banner4.jpg" alt="Diecast model cars in detail" onerror="this.onerror=null;this.src='https://placehold.co/500x400/20383c/FFFFFF?text=Diecast+Cars';">
+              <h3>Diecast Model Cars</h3>
+            </section>
+  
+            <section class="slider-controls">
+              <button class="slider-btn prev" aria-label="Previous slide">&#10094;</button>
+              <button class="slider-btn next" aria-label="Next slide">&#10095;</button>
+            </section>
+            <section class="slider-dots"></section>
+          </section>
+          <aside class="showcase-side" aria-label="Explore more collections">
+            <a class="showcase-card" href="products.html?category=Board%20Games">
+              <span>GAME NIGHT STARTS HERE / 01</span>
+              <strong>Bring everyone to the table.</strong>
+              <small>Explore board games ↗</small>
+            </a>
+            <a class="showcase-card" href="products.html?category=Diecast%20Cars">
+              <span>FOR THE DETAIL LOVERS / 02</span>
+              <strong>Small cars. Big character.</strong>
+              <small>Explore diecast cars ↗</small>
+            </a>
+          </aside>
+        </section>
+      </section>
+    </section>
+
+    <section class="discovery-strip" aria-label="What you will find">
+      <section class="container discovery-grid">
+        <p><strong>01 / COLLECT</strong> Find your next shelf favourite.</p>
+        <p><strong>02 / PLAY</strong> Make a night of it.</p>
+        <p><strong>03 / GIFT</strong> Surprise someone special.</p>
+      </section>
+    </section>
+
+    <!-- ================= FEATURED PRODUCTS ================= -->
+    <section class="section" style="background:var(--white)">
+      <section class="container">
+        <span class="eyebrow" style="display:block;text-align:center">Hand Picked</span>
+        <h2 class="section-title">A few good finds</h2>
+        <p class="section-subtitle">The pieces we keep coming back to.</p>
+
+        <section class="product-grid" id="featuredProductsGrid">
+          <!-- Rendered by main.js -->
+        </section>
+      </section>
+    </section>
+
+    <!-- ================= CATEGORIES ================= -->
+    <section class="section" id="categories">
+      <section class="container">
+        <span class="eyebrow" style="display:block;text-align:center">Browse</span>
+        <h2 class="section-title">Find your kind of fun</h2>
+        <p class="section-subtitle">Four worlds to explore. Where will you start?</p>
+
+        <section class="category-grid">
+          <section class="category-card reveal" data-category-link="Figurines">
+            <section class="category-icon">&#127917;</section>
+            <h3>Figurines</h3>
+            <p>Detailed collectible statues &amp; action figures</p>
+          </section>
+          <section class="category-card reveal" data-category-link="Toys">
+            <section class="category-icon">&#129514;</section>
+            <h3>Toys</h3>
+            <p>Fun for kids and kids-at-heart</p>
+          </section>
+          <section class="category-card reveal" data-category-link="Board Games">
+            <section class="category-icon">&#127922;</section>
+            <h3>Board Games</h3>
+            <p>Strategy, party &amp; family games</p>
+          </section>
+          <section class="category-card reveal" data-category-link="Diecast Cars">
+            <section class="category-icon">&#128663;</section>
+            <h3>Diecast Cars</h3>
+            <p>Precision scale model vehicles</p>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <!-- ================= PRODUCT OF THE DAY ================= -->
+    <section class="section">
+      <section class="container">
+        <span class="eyebrow" style="display:block;text-align:center">Today Only</span>
+        <h2 class="section-title">Today’s little obsession</h2>
+        <p class="section-subtitle">One standout find, picked fresh each day.</p>
+
+        <section class="potd reveal" id="productOfTheDay">
+          <!-- Rendered by main.js -->
+        </section>
+      </section>
+    </section>
+
+    <!-- ================= WHY CHOOSE US ================= -->
+    <section class="section benefits-section">
+      <section class="container">
+        <h2 class="section-title">Made for the joy of finding</h2>
+        <p class="section-subtitle">Every detail is part of the experience.</p>
+
+        <section class="benefits-grid">
+          <section class="benefit-card reveal">
+            <section class="benefit-icon">&#128230;</section>
+            <h3>Wide Collection</h3>
+            <p>Hundreds of items across figurines, toys, board games and diecast cars.</p>
+          </section>
+          <section class="benefit-card reveal">
+            <section class="benefit-icon">&#9989;</section>
+            <h3>Quality Products</h3>
+            <p>Every item is checked for detail, durability and finish before listing.</p>
+          </section>
+          <section class="benefit-card reveal">
+            <section class="benefit-icon">&#128274;</section>
+            <h3>Easy Shopping</h3>
+            <p>A simple cart, wishlist and checkout flow that gets out of your way.</p>
+          </section>
+          <section class="benefit-card reveal">
+            <section class="benefit-icon">&#127942;</section>
+            <h3>Collector Friendly</h3>
+            <p>Wishlist statuses and detailed listings built with collectors in mind.</p>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+    <section class="section">
+      <section class="container">
+        <section class="newsletter reveal">
+          <h2>A little joy in your inbox</h2>
+          <p>Be the first to hear about new finds and returning favourites.</p>
+          <form id="newsletterForm" class="newsletter-form" novalidate>
+            <label for="newsletterEmail" class="visually-hidden">Email address</label>
+            <input type="email" id="newsletterEmail" name="email" placeholder="you@example.com" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <p class="form-message" role="status" aria-live="polite"></p>
+        </section>
+      </section>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <section class="container">
+      <section class="footer-grid">
+        <section class="footer-col">
+          <span class="footer-logo">Toy Haven</span>
+          <p>Your modern destination for collectible figurines, toys, board games and diecast model cars.</p>
+          <section class="social-icons">
+            <a href="#" aria-label="Toy Haven on Facebook">f</a>
+            <a href="#" aria-label="Toy Haven on Instagram">i</a>
+            <a href="#" aria-label="Toy Haven on X">x</a>
+          </section>
+        </section>
+        <section class="footer-col">
+          <h3>Navigate</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="feedback.html">Support</a></li>
+          </ul>
+        </section>
+        <section class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="products.html?category=Figurines">Figurines</a></li>
+            <li><a href="products.html?category=Toys">Toys</a></li>
+            <li><a href="products.html?category=Board%20Games">Board Games</a></li>
+            <li><a href="products.html?category=Diecast%Cars">Diecast Cars</a></li>
+          </ul>
+        </section>
+        <section class="footer-col">
+          <h4>Contact &amp; Newsletter</h4>
+          <p>123 Collector's Lane, Colombo, Sri Lanka</p>
+          <p>hello@toyhaven.example</p>
+          <p>+94 11 234 5678</p>
+        </section>
+      </section>
+      <section class="footer-bottom">
+        &copy; <span id="currentYear"></span> Toy Haven. All rights reserved. University project — not a real store.
+      </section>
+    </section>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>

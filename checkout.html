@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | Toy Haven</title>
+  <meta name="description" content="Complete your Toy Haven order — a simulated checkout for university coursework, no real payments are processed.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#174d51">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/redesign.css">
+  <link rel="stylesheet" href="css/layout.css">
+</head>
+<body class="inner-page">
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <aside class="announcement-bar" aria-label="Store notice">
+    <section class="container announcement-inner">
+      <span>THE LITTLE THINGS MAKE PLAY BIG.</span>
+      <a href="products.html">Explore the collection <span aria-hidden="true">↗</span></a>
+    </section>
+  </aside>
+
+  <header class="site-header">
+    <section class="container nav-wrapper">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Toy Haven logo" onerror="this.onerror=null;this.src='https://placehold.co/40x40/174d51/FFFFFF?text=TH';">
+        Toy Haven
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="cart.html">Cart</a>
+        <a href="feedback.html">Support</a>
+      </nav>
+      <section class="nav-icons">
+        <a href="wishlist.html" class="nav-icon-link" aria-label="View wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
+          <span class="badge wishlist-count">0</span>
+        </a>
+        <a href="cart.html" class="nav-icon-link" aria-label="View shopping cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          <span class="badge cart-count">0</span>
+        </a>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </section>
+    </section>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <section class="container">
+        <section class="page-heading">
+          <p class="page-kicker">ALMOST YOURS</p>
+          <h1 class="section-title">Checkout</h1>
+          <p class="section-subtitle">This is a simulated checkout for coursework purposes — no real payment is processed.</p>
+        </section>
+
+        <section class="checkout-layout">
+          <aside class="order-summary">
+            <h2 style="margin-bottom:16px;">Order Summary</h2>
+            <section class="order-summary-list" id="orderSummaryList"></section>
+            <section class="summary-row"><span>Subtotal</span><span id="checkoutSubtotal">Rs. 0</span></section>
+            <section class="summary-row"><span>Delivery</span><span id="checkoutDelivery">Rs. 0</span></section>
+            <section class="summary-row total"><span>Total</span><span id="checkoutTotal">Rs. 0</span></section>
+          </aside>
+
+          <form class="checkout-form" id="checkoutForm" novalidate>
+            <h3 style="margin-bottom:20px;">Delivery Details</h3>
+
+            <section class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="fullName" autocomplete="name">
+              <span class="error-msg" id="fullNameError"></span>
+            </section>
+
+            <section class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" autocomplete="email">
+              <span class="error-msg" id="emailError"></span>
+            </section>
+
+            <section class="form-group">
+              <label for="address">Delivery Address</label>
+              <textarea id="address" name="address" rows="3" autocomplete="street-address"></textarea>
+              <span class="error-msg" id="addressError"></span>
+            </section>
+
+            <section class="form-group">
+              <label id="paymentLabel">Payment Method</label>
+              <fieldset class="payment-options">
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="Card">
+                  <span>&#128179; Card</span>
+                </label>
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="Cash on Delivery">
+                  <span>&#128176; Cash on Delivery</span>
+                </label>
+              </fieldset>
+              <span class="error-msg" id="paymentError">Please select a payment method.</span>
+            </section>
+
+            <button type="submit" class="btn btn-solid btn-block">Place Order</button>
+          </form>
+        </section>
+      </section>
+    </section>
+  </main>
+
+  <!-- SUCCESS OVERLAY -->
+  <section class="success-overlay" id="successOverlay">
+    <section class="success-box">
+      <section class="success-check">&#10003;</section>
+      <h2>Order Placed!</h2>
+      <p>Thank you for shopping with Toy Haven.</p>
+      <p class="order-number">Order #: <span id="orderNumberDisplay"></span></p>
+      <a href="index.html" class="btn btn-solid btn-block">Return to Home</a>
+    </section>
+  </section>
+
+  <footer class="site-footer">
+    <section class="container">
+      <section class="footer-bottom">
+        &copy; <span id="currentYear"></span> Toy Haven. All rights reserved. University project — not a real store.
+      </section>
+    </section>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>

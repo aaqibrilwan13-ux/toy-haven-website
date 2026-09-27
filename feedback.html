@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback &amp; Support | Toy Haven</title>
+  <meta name="description" content="Get in touch with Toy Haven support or send feedback. Browse frequently asked questions about orders, wishlists and payments.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#174d51">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/redesign.css">
+  <link rel="stylesheet" href="css/layout.css">
+</head>
+<body class="inner-page">
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <aside class="announcement-bar" aria-label="Store notice">
+    <section class="container announcement-inner">
+      <span>THE LITTLE THINGS MAKE PLAY BIG.</span>
+      <a href="products.html">Explore the collection <span aria-hidden="true">↗</span></a>
+    </section>
+  </aside>
+
+  <header class="site-header">
+    <section class="container nav-wrapper">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Toy Haven logo" onerror="this.onerror=null;this.src='https://placehold.co/40x40/174d51/FFFFFF?text=TH';">
+        Toy Haven
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="cart.html">Cart</a>
+        <a href="feedback.html">Support</a>
+      </nav>
+      <section class="nav-icons">
+        <a href="wishlist.html" class="nav-icon-link" aria-label="View wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
+          <span class="badge wishlist-count">0</span>
+        </a>
+        <a href="cart.html" class="nav-icon-link" aria-label="View shopping cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          <span class="badge cart-count">0</span>
+        </a>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </section>
+    </section>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <section class="container">
+        <section class="page-heading">
+          <p class="page-kicker">WE ARE HERE TO HELP</p>
+          <h1 class="section-title">Feedback &amp; Support</h1>
+          <p class="section-subtitle">Questions, ideas or issues — we'd love to hear from you.</p>
+        </section>
+
+        <section class="feedback-layout">
+          <section>
+            <h2 style="margin-bottom:20px;">Frequently Asked Questions</h2>
+
+            <section class="faq-item">
+              <button class="faq-question" aria-expanded="false">How do I place an order?<span class="icon">+</span></button>
+              <section class="faq-answer"><p>Add products to your cart from the Products page, then go to Cart and select Proceed to Checkout to fill in your delivery details and confirm.</p></section>
+            </section>
+
+            <section class="faq-item">
+              <button class="faq-question" aria-expanded="false">How can I add a product to my wishlist?<span class="icon">+</span></button>
+              <section class="faq-answer"><p>Click the heart icon on any product card or inside the product details view to add it to your wishlist with an "Interested" status.</p></section>
+            </section>
+
+            <section class="faq-item">
+              <button class="faq-question" aria-expanded="false">Can I change my cart quantity?<span class="icon">+</span></button>
+              <section class="faq-answer"><p>Yes. Use the plus and minus buttons or type a value directly in the quantity box on the Cart page. Quantity cannot go below 1.</p></section>
+            </section>
+
+            <section class="faq-item">
+              <button class="faq-question" aria-expanded="false">What payment methods are available?<span class="icon">+</span></button>
+              <section class="faq-answer"><p>Toy Haven's checkout is a simulation for coursework purposes and supports Card and Cash on Delivery as example options.</p></section>
+            </section>
+
+            <section class="faq-item">
+              <button class="faq-question" aria-expanded="false">How can I contact Toy Haven?<span class="icon">+</span></button>
+              <section class="faq-answer"><p>Use the feedback form on this page, or reach us at hello@toyhaven.example / +94 11 234 5678.</p></section>
+            </section>
+          </section>
+
+          <form class="checkout-form" id="feedbackForm" novalidate>
+            <h3 style="margin-bottom:20px;">Send us a message</h3>
+
+            <section class="form-group">
+              <label for="feedbackName">Name</label>
+              <input type="text" id="feedbackName" name="name" autocomplete="name">
+              <span class="error-msg" id="feedbackNameError"></span>
+            </section>
+
+            <section class="form-group">
+              <label for="feedbackEmail">Email Address</label>
+              <input type="email" id="feedbackEmail" name="email" autocomplete="email">
+              <span class="error-msg" id="feedbackEmailError"></span>
+            </section>
+
+            <section class="form-group">
+              <label for="feedbackMessage">Message</label>
+              <textarea id="feedbackMessage" name="message" rows="5"></textarea>
+              <span class="error-msg" id="feedbackMessageError"></span>
+            </section>
+
+            <button type="submit" class="btn btn-solid btn-block">Send Message</button>
+            <p class="form-message success" id="feedbackConfirmation" role="status" aria-live="polite" style="margin-top:14px;color:var(--success);"></p>
+          </form>
+        </section>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <section class="container">
+      <section class="footer-bottom">
+        &copy; <span id="currentYear"></span> Toy Haven. All rights reserved. University project — not a real store.
+      </section>
+    </section>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/feedback.js"></script>
+</body>
+</html>
